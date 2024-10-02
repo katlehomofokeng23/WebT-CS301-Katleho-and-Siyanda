@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.cdnfonts.com/css/anime-ace" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        /* Add some basic styles for the slideshow */
+        .slideshow-container {
+            width: 800;
+            height: 600;
+            margin: auto;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 800;
+            height: 600;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: relative;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="anime_website_logo_4.png" height="100px" width="100px" alt="Logo Image">
+            <p>Anime Assembly</p>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <div class="dropdown">
+                    <a href="#" onclick="goHome()">Home</a>
+                    <a href="login.html">Login/Register</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Anime To Watch</a>
+                <div class="dropdown">
+                    <a href="main.html">Top Action Anime 2024</a>
+                    <a href="comedy.html">Top Comedy Anime</a>
+                    <a href="recommend.html">Recommend an Anime</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="dropdown">
+                    <a href="#" onclick="showAboutUs()">About Us</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="main-content">
+        <h1>Welcome to the Anime Assembly</h1>
+        <p><em>Discover your next favorite anime with our personalized recommendation platform.<br> 
+            Whether you're a seasoned otaku or new to the world of anime, our website helps you find series and movies tailored to your tastes.<br>
+            Explore curated lists, user reviews, and expert suggestions to dive deeper into the anime universe.<br>
+            Start your journey today and uncover hidden gems that match your unique preferences!</em></p>
+        <h2 style="font-size: 50px;">Top Action Anime 2024</h2>
+            <div class="container">
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>1.Demon Slayer</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. 
+                                One day, Tanjirou decides to go down to the local village to make a little money selling charcoal.
+                                On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/wyiZWYMilgk" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>2.Jujutsu Kaisen</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather.
+                               However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item.
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/4A_X-Dvl0ws" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>3.Attack on Titan</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>One of the most intense, high-stakes anime ever made, featuring breathtaking battles against giant humanoid creatures called Titans. It also has complex storytelling with numerous plot twists.  
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/LV-nazLVmgo" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>4.My Hero Academia</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p> A fun and exciting story set in a world where most people have superpowers, following the journey of young students training to become heroes. The series is packed with intense battles, character growth, and emotional moments.</p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/L1FdEBTJXus" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>5.One Punch Man</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p> A unique take on the superhero genre, following Saitama, a hero who can defeat any opponent with one punch. Its over-the-top action scenes and humorous take on the genre make it a fresh experience.
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/Poo5lqoWSGw" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/G63K98PZ6/one-punch-man">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>6.Fullmetal Alchemist: Brotherhood</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p> Combines action with a deep, philosophical storyline about the consequences of using forbidden alchemy. The fight scenes are creative, fast-paced, and filled with emotional stakes.
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/RNwNA1M8A94" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GRGGPG93R/fullmetal-alchemist-brotherhood">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>7.Hunter x Hunter</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>A brilliant mix of strategy, adventure, and action, this anime evolves into much more than a simple shonen. Its battles are strategic and mentally engaging, with plenty of twists that keep you on the edge of your seat.
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/d6kBeJjTGnY" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GY3VKX1MR/hunter-x-hunter">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>8.Sword Art Online</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>Set in a virtual reality MMORPG where players are trapped and must fight to survive. It mixes fantasy, technology, and action in exciting ways, with great swordplay and high emotional stakes. 
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/6ohYYtxfDCg" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GR49G9VP6/sword-art-online">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td align="center">
+                            <h2>9.Vinland Saga</h2>
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="demon.jpg" alt="Demon Slayer">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="juju.jpg" alt="Jujutsu Kaisen">
+                                </div>
+                        
+                                <div class="slide">
+                                    <img src="attack.jpg" alt="Attack on Titan">
+                                </div>
+                        
+                                <a class="prev" onclick="prevSlide()">❮</a>
+                                <a class="next" onclick="nextSlide()">❯</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>A historical action anime based on the Viking era, featuring epic battles, political intrigue, and a strong focus on revenge and redemption. The combat is brutal and realistic, with well-developed characters. 
+                            </p>   
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <iframe src="https://www.youtube.com/embed/H3fS-bZ4e2E" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p><a href="https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga">Click here to Watch</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+    <script src="script.js">
+       
+        </script>
+    <footer>
+        <p id="footer"><strong> Contact us: </strong></p>
+          <ul>
+            <li><strong>0725289878</strong> </li>
+            <li><strong>0396588822</strong></li>
+          </ul>
+          <p style="color: blue;">&copy; Copyright</p>
+          <p id="browserInfo"></p>
+        <p id="pageInfo"></p>
+    </footer>
+  
+</body>
+</html>
